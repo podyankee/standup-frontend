@@ -1,7 +1,13 @@
 html
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
 	box-sizing: border-box
-*, *::after, *::fefore
+
+*, *:before, *:after
+	-webkit-box-sizing: inherit
+	-moz-box-sizing: inherit
 	box-sizing: inherit
+
 body
 	min-width: 320px
 	min-height: 100vh
@@ -13,7 +19,7 @@ body
 	font-size: 18px
 	line-height: 1.4
 	color: #1a1a1a
-	background-size: #fff
+	background-color: #fff
 img, svg
 	display: block
 	max-width: 100%
@@ -39,3 +45,20 @@ fieldset
 	margin: 0
 	padding: 0
 	border: none
+.ts-dropdown, .ts-control, .ts-control input
+	font-size: 18px
+	line-height: 1.4
+	border-radius: 8px
+	color: #1a1a1a
+	border: none
+	padding: 10px 16px 8px
+.dropdown-active .ts-control
+	border-radius: 8px
+.ts-dropdown .active
+	background-color: transparent
+.ts-wrapper.single .ts-control
+	background-color: #fff
+.ts-wrapper.single .ts-control::after
+	border-color: #1a1a1a transparent transparent transparent
+.ts-wrapper.single.dropdown-active .ts-control::after
+	border-color: transparent transparent #1a1a1a transparent

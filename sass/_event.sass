@@ -10,10 +10,12 @@
 	background-repeat: no-repeat
 	background-position: center
 	color: #fff
+	padding: 80px 30px 80px
+	// display: none
 	&__title
 		font-size: 100px
 		font-weight: 800
-		margin-bottom: 62px
+		margin-bottom: 50px
 		line-height: 1.2
 	&__info
 		display: flex
@@ -21,14 +23,12 @@
 		margin-bottom: 62px
 	&__info-item
 		font-size: 30px
-		line-height: 2
-		display: flex
-		align-items: end
-		gap: 8px
+		line-height: 1.4
 	&__info-number
 		font-size: 80px
 		font-weight: 800
 		line-height: 1.2
+		margin-right: 8px
 	&__button
 		font-size: 24px
 		line-height: 1.4
@@ -43,3 +43,33 @@
 		align-items: center
 		font-size: 18px
 		gap: 8px
+
+@media (max-width: 1024px)
+	.event
+		&__title
+			font-size: 70px
+			margin-bottom: 40px
+		&__info
+			gap: 50px
+			margin-bottom: 45px
+		&__info-item
+			font-size: 24px
+		&__info-number
+			font-size: 50px
+		&__button-reserve
+			font-size: 18px
+			margin-bottom: 20px
+
+@media (max-width: 680px)
+	.event
+		padding: 80px 16px 60px
+		&__title
+			font-size: 38px
+			margin-bottom: 8px
+		&__info
+			display: grid
+			grid-template-columns: max-content max-content
+			gap: 10px
+			margin-bottom: 30px
+		&__button_reserve
+			margin-top: auto
