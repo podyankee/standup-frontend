@@ -10,6 +10,8 @@
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.16",
+		"inputmask": "^5.0.8",
+		"just-validate": "^4.3.0",
 		"sass": "^1.69.5",
 		"vite": "^5.0.0",
 		"vite-plugin-pug-transformer": "^1.0.5"
