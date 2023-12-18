@@ -11,6 +11,14 @@
 	background-position: center
 	color: #fff
 	padding: 80px 30px 80px
+	transition: opacity 0.5s, visibility 0.5s
+	opacity: 1
+	visibility: visible
+	&__hidden
+		opacity: 0
+		visibility: hidden
+		position: absolute
+		width: 100%
 	// display: none
 	&__title
 		font-size: 100px
@@ -32,6 +40,11 @@
 	&__button
 		font-size: 24px
 		line-height: 1.4
+		opacity: 1
+		visibility: visible
+	&__button_hidden
+		visibility: hidden
+		opacity: 0
 	&__button_reserve
 		padding: 16px 36px
 		border-radius: 36px
